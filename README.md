@@ -21,7 +21,7 @@ The control strategy mixes a learned policy with proportional-derivative (PD) co
 Run training with an RL framework of choice. Example using `python`:
 
 ```bash
-python src/train.py --env wheel_legged --num-steps 1000000
+python src/train.py --num-steps 1000000
 ```
 
 ## Testing
@@ -29,7 +29,7 @@ python src/train.py --env wheel_legged --num-steps 1000000
 After training, evaluate the policy in simulation:
 
 ```bash
-python src/test.py --env wheel_legged --model checkpoints/latest.pt
+python src/test.py --model checkpoints/latest.pt
 ```
 
 These commands assume that training and evaluation scripts are implemented under `src/` and that environments and controllers live in `envs/` and `controllers/` respectively.
